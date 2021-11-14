@@ -164,24 +164,34 @@ document.querySelector("#modificarC").addEventListener("click", function (event)
     })
 })
 document.querySelector("#eliminarC").addEventListener("click", function (event) {
-    
-    
-    console.log(comics);
-    let body = JSON.stringify(comics)
+    event.preventDefault();
 
-    fetch("/Comics/", {
+    let _id = document.querySelector("input[name='_id']").value;
+    console.log(_id)
+
+
+    let comic = {
+        _id: _id
+
+    };
+    console.log(comic);
+    let body = JSON.stringify(comic)
+
+
+
+    fetch("/Comics", {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json"
         },
-        body: body
+        body: body,
     }).then(function (response) {
         return response.json()
     }).then(function (res) {
         console.log(res)
-    })
+    }
+    )
 })
-
 
 //JUEGOS CARTAS
 document.querySelector("#mostrarJC").addEventListener("click", function (event) {
@@ -264,6 +274,36 @@ document.querySelector("#modificarJuegosCartas").addEventListener("click", funct
     }).then(function (res) {
         console.log(res)
     })
+})
+
+document.querySelector("#eliminarJC").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    let _id = document.querySelector("input[name='_idJC']").value;
+    console.log(_id)
+
+
+    let juegosCartas = {
+        _id: _id
+
+    };
+    console.log(juegosCartas);
+    let body = JSON.stringify(juegosCartas)
+
+
+
+    fetch("/JuegosCartas", {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: body,
+    }).then(function (response) {
+        return response.json()
+    }).then(function (res) {
+        console.log(res)
+    }
+    )
 })
 
 
@@ -349,6 +389,37 @@ document.querySelector("#modificarJuegosMesa").addEventListener("click", functio
         console.log(res)
     })
 })
+
+document.querySelector("#eliminarJM").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    let _id = document.querySelector("input[name='_idJM']").value;
+    console.log(_id)
+
+
+    let JuegosMesa = {
+        _id: _id
+
+    };
+    console.log(JuegosMesa);
+    let body = JSON.stringify(JuegosMesa)
+
+
+
+    fetch("/JuegosMesa", {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: body,
+    }).then(function (response) {
+        return response.json()
+    }).then(function (res) {
+        console.log(res)
+    }
+    )
+})
+
 //SNACKS
 document.querySelector("#mostrarS").addEventListener("click", function (event) {
     event.preventDefault();
@@ -430,6 +501,35 @@ document.querySelector("#modificarSnack").addEventListener("click", function (ev
     })
 })
 
+document.querySelector("#eliminarS").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    let _id = document.querySelector("input[name='_idS']").value;
+    console.log(_id)
+
+
+    let Snacks = {
+        _id: _id
+
+    };
+    console.log(Snacks);
+    let body = JSON.stringify(Snacks)
+
+
+
+    fetch("/Snacks", {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: body,
+    }).then(function (response) {
+        return response.json()
+    }).then(function (res) {
+        console.log(res)
+    }
+    )
+})
 
 
 document.querySelector("#eliminarC").addEventListener("click", function (event) {

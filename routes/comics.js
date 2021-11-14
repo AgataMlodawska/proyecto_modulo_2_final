@@ -66,12 +66,12 @@ router.put("/", function (req, res) {
 
 router.delete('/', function (req, res) {
   let db = req.app.locals.db
-  let _id = req.body._id
-  console.log(_id)
-  db.collection("Comics").find(_id).toArray(function (err, data) {
+  let new_id = req.body._id
+  console.log(new_id)
+  db.collection("Comics").find({_id: new_id}).toArray(function (err, data) {
       if (data.length > 0) {
           console.log(data)
-          db.collection("Comics").deleteOne({ _id: _id },
+          db.collection("Comics").deleteOne({ _id: new_id },
               function (err, respuesta) {
                   if (err !== undefined) {
                       console.log(err), res.send({ mensaje: "Ha habido un error. " + err });
@@ -87,5 +87,6 @@ router.delete('/', function (req, res) {
 
   })
 })
+
 
 module.exports = router;

@@ -155,3 +155,33 @@ document.querySelector("#modificarC").addEventListener("click", function (event)
         console.log(res)
     })
 })
+
+document.querySelector("#eliminarC").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    let _id = document.querySelector("input[name='_id']").value;
+    console.log(_id)
+
+
+    let comic = {
+        _id: _id
+
+    };
+    console.log(comic);
+    let body = JSON.stringify(comic)
+
+
+
+    fetch("/Comics", {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: body,
+    }).then(function (response) {
+        return response.json()
+    }).then(function (res) {
+        console.log(res)
+    }
+    )
+})

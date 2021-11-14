@@ -64,4 +64,28 @@ router.put("/", function (req, res) {
   );
 });
 
+
+router.delete('/', function (req, res) {
+  let db = req.app.locals.db
+  let new_id = req.body._idJC
+  console.log(new_id)
+  db.collection("JuegosCartas").find({_id: new_id}).toArray(function (err, data) {
+      if (data.length > 0) {
+          console.log(data)
+          db.collection("JuegosCartas").deleteOne({ _id: new_id },
+              function (err, respuesta) {
+                  if (err !== undefined) {
+                      console.log(err), res.send({ mensaje: "Ha habido un error. " + err });
+                  } else {
+                      console.log(respuesta);
+                      console.log("Modificado correctamente");
+                      res.send(respuesta)
+                  }
+              })
+
+
+      }
+
+  })
+})
 module.exports = router;
