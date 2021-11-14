@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Kuna Shop</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i> 944444444</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> atencion@kuna.com</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i> Urazurrutia Kalea, 3, 48003 Bilbo, Bizkaia</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#"><i class="fa fa-dollar"></i> €</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> Mi cuenta</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="#" class="logo">
+									<img style="width:40%;height: 10%;"  src="./logo.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									<select class="input-select">
+										<option value="0">All Categories</option>
+										<option value="1">Clientes</option>
+										<option value="2">Productos</option>
+                                        <option value="3">Ventas</option>
+                                        <option value="4">Listados</option>
+									</select>
+									<input class="input" placeholder="Busca aquí">
+									<button class="search-btn">Buscar</button>
+								</form>
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Wishlist -->
+								<div>
+									<a href="#">
+										<i class="fa fa-heart-o"></i>
+										<span>Tus deseados</span>
+										<div class="qty">2</div>
+									</a>
+								</div>
+								<!-- /Wishlist -->
+
+								<!-- Cart -->
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Tu carrito</span>
+										<div class="qty">3</div>
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/product01.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">product name goes here</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/product02.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">product name goes here</a></h3>
+													<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+										</div>
+										<div class="cart-summary">
+											<small>3 producto(s) elegidos</small>
+											<h5>TOTAL: $2940.00</h5>
+										</div>
+										<div class="cart-btns">
+											<a href="#">Ver carrito</a>
+											<a href="#">Pagar  <i class="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li><a href="#">Home</a></li>
+						<li class="active"><a href="#">Clientes</a></li>
+						<li><a href="productos.html">Productos</a></li>
+						<li><a href="ventas.html">Ventas</a></li>
+						<li><a href="listados.html">Listados</a></li>
+						
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+		<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="breadcrumb-tree">
+							
+							<li><a href="#">Home</a></li>
+							<li><a href="clientes.html">Clientes</a></li>
+							<li  class="active"><a href="productos.html">Productos</a></li>
+							<li><a href="ventas.html">Ventas</a></li>
+							<li><a href="listados.html">Listados</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->
+		<script src="comics.js"></script>
+		<script src="JuegosMesa.js"></script>
+		<script src="JuegosCartas.js"></script>
+		<script src="snacks.js"></script>
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- Product main img -->
+					<div class="col-md-5 col-md-push-2">
+						
+					</div>
+					<!-- /Product main img -->
+
+					<!-- Product thumb imgs -->
+					<div class="col-md-2  col-md-pull-5">
+						<div id="product-imgs">
+							<div id="tabla"></div>
+						</div>
+					</div>
+					<!-- /Product thumb imgs -->
+
+					<!-- Product details -->
+					<div class="col-md-5">
+						<div class="product-details">
+
+		<!--Formularios-->								
+						
+<h2>Comics</h2>
+<form>
+	<input type="text" name="id" placeholder="id" />
+	<input type="text" name="titulo" placeholder="titulo" />
+	<input type="number" name="cantidad" placeholder="cantidad" />
+	<input type="number" name="precio" placeholder="precio" />
+	<button id="mostrarC">Ver todos los comics</button>
+	<div>
+		<table>
+			<tr>
+				<th>Id</th>
+				<th>Titulo</th>
+				<th>Cantidad</th>
+				<th>Precio</th>
+				
+			</tr>
+
+		</table>
+	</div>
+	<button id="añadirC">Añadir</button>
+	<button id="modificarC">Modificar</button>
+	<button id="eliminarC">Eliminar</button>
+</form>
+<br>
+<br>
+<h2>JuegosCartas</h2>
+<form>
+	<input type="text" name="nombreJC" placeholder="nombre juego Cartas" />
+	<input type="number" name="cantidadJC" placeholder="cantidad juego Cartas" />
+	<input type="number" name="precioJC" placeholder="precio juego Cartas" />
+	<button id="mostrarJC">Ver todos los JuegosDeCartas</button>
+	<button id="añadirJuegosCartas">Añadir</button>
+	<button id="modificarJuegosCartas">Modificar</button>
+	<button id="eliminarJC">Eliminar</button>
+</form>
+<br>
+<br>
+<h2>JuegosMesa</h2>
+<form>
+	<input type="text" name="nombreJM" placeholder="nombre juego Mesa" />
+	<input type="number" name="cantidadJM" placeholder="cantidad juego Mesa" />
+	<input type="number" name="precioJM" placeholder="precio juego Mesa" />
+	<button id="mostrarJM">Ver todos los JuegosDeMesa</button>
+	<button id="añadirJuegosMesa">Añadir</button>
+	<button id="modificarJuegosMesa">Modificar</button>
+	<button id="eliminarJM">Eliminar</button>
+</form>
+<br>
+<br>
+<h2>Snacks</h2>
+<form>
+	<input type="text" name="nombreS" placeholder="nombre Snacks" />
+	<input type="number" name="cantidadS" placeholder="cantidad Snacks" />
+	<input type="number" name="precioS" placeholder="precio Snacks" />
+	<button id="mostrarS">Ver todos los Snacks</button>
+	<button id="añadirS">Añadir</button>
+	<button id="modificarSnack">Modificar</button>
+	<button id="eliminarS">Eliminar</button>
+</form>
+<script src="front.js"></script>
+
+					
+	
+						
+						</div>
+					</div>
+					<!-- /Product details -->
+
+				
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+
+				
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Sobre nosotros</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>Urazurrutia Kalea, 3, 48003 Bilbo, Bizkaia</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>944444444</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>atencion@kuna.com</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Categorías</h3>
+								<ul class="footer-links">
+									<li><a href="clientes.html">Clientes</a></li>
+									<li><a href="productos.html">Productos</a></li>
+									<li><a href="ventas.html">Ventas</a></li>
+									<li><a href="listados.html">Listados generales</a></li>
+									
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Información</h3>
+								<ul class="footer-links">
+									<li><a href="aboutus.html">Sobre nosotros</a></li>
+									<li><a href="contacto.html">Contactanos</a></li>
+									<li><a href="policy.html">Política de privacidad</a></li>
+									<li><a href="termsandconditions.html">Términos y condiciones</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Service</h3>
+								<ul class="footer-links">
+									<li><a href="cuenta.html">Mi cuenta</a></li>
+									<li><a href="#">Ver carrito</a></li>
+									<li><a href="#">Deseados</a></li>
+									<li><a href="listados.html">Listados</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->
+
+			<!-- bottom footer -->
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							
+							<span class="copyright">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="index.html" target="_blank">KunaShop</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</span>
+						</div>
+					</div>
+						<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /bottom footer -->
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,16 @@
+
+db.Clientes.insertMany([{dni: "100000000Q", nombre: "Agata", apellidos: "Mlodawska"}, {dni: "200000000Q", nombre: "Adam", apellidos: "Driver"}, {dni: "300000000Q",
+nombre: "Richard", apellidos: "Madden"}])
+
+
+db.Comics.insertMany([{titulo: "Asterix y Obelix", autor: "René Goscinny", cantidad: "45", precio: "9.99"},{titulo: "Tintin", autor: "Herge", cantidad: "25", precio: "7.59"}, {titulo: "Spiderman", autor: "Stan Lee", cantidad: "30", precio: "12.99"}, {titulo: "Persepolis", autor: "Marjane Satrapi", cantidad: "15", precio: "8.79"}])
+
+db.JuegosCartas.insertMany([{nombre: "Poker", cantidad : "100", precio : "3" },{nombre: "bridge", cantidad: "58", "precio": "2.49"}, {nombre: "solitario", cantidad: "82", precio: "1.99"}, {nombre: "mus", cantidad: "28", precio: "2.99"}])
+{ "_id" : ObjectId("618550f405906edeee2dc832"), "nombre" : "Monopoly", "cantidad" : 35, "precio" : 13 }
+db.JuegosMesa.insertMany([{nombre: "Monopoly", cantidad : "35", precio : "13" }, {nombre: "Antarctica", cantidad: "83", precio: "6"}, {nombre: "Virus", cantidad: "19", precio: "13.49"}, {nombre: "Pajarracos", cantidad: "28", precio: "8"}])
+
+db.Snacks.insertMany([{nombre : "Pipas Grefusa", cantidad : "70", precio: "2" }, {nombre: "Pringles", cantidad: "65", precio: "1.59"}, {nombre: "Palomitas", cantidad: "45", precio: "0.99"}, {nombre: "Cacahuetes", cantidad: "39", precio: "2.39"}])
+db.Ventas.insertOne({dni_cliente:'70000000Q',IdVenta:"1",idProducto:"6188df9f71e29987af72f1bb",categoria:"comics",nombreproducto:"Asterix y Obelix",cantidad:"1",importe:"9.99"});
+db.Ventas.insertMany([{dni_cliente:'70000000Q', IdVenta: "1", idProducto: "618841c718d2a4d997cdedc5", categoria: "juegos de cartas", nombreproducto: "Poker", cantidad: "1", importe: "3"}, {dni_cliente:'70000000Q', IdVenta: "1", idProducto: "6188446118d2a4d997cdedc9", categoria: "juegos de mesa", nombreproducto: "Monopoly", cantidad: "1", importe: "13"}, {dni_cliente:'100000000Q', IdVenta: "2", idProducto: "6188446118d2a4d997cdedc9", categoria: "comics", nombreproducto: "Tintin", cantidad: "1", importe: "7.59"},
+ {dni_cliente:'100000000Q', IdVenta: "2", idProducto: "618845a018d2a4d997cdedce", categoria: "snacks", nombreproducto: "Pringles", cantidad: "1", importe: "1.59"}, {dni_cliente:'100000000Q', IdVenta: "3", idProducto: "618845a018d2a4d997cdedce", categoria: "juegos de mesa", nombreproducto: "Virus", cantidad: "1", importe: "13.49"}, {dni_cliente:'200000000Q', IdVenta: "3", idProducto: "618841c718d2a4d997cdedc6", categoria: "juegos de cartas", nombreproducto: "bridge", cantidad: "1", importe: "2.49"},{dni_cliente:'200000000Q', IdVenta: "3", idProducto: "6188446118d2a4d997cdedca", categoria: "juegos de mesa", nombreproducto: "Antarctica", cantidad: "1", importe: "6"}, 
+ {dni_cliente:'300000000Q', IdVenta: "4", idProducto: "618845a018d2a4d997cdedce", categoria: "snacks", nombreproducto: "Palomitas", cantidad: "1", importe: "1.59"
